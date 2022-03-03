@@ -2,8 +2,6 @@
 Springboot phonebook Challenge.
 Contacts manager project.
 
-![img.png](img.png)
-
 #Technologies
 - Springboot
 - Spring Data with JPA  
@@ -21,3 +19,4 @@ Requirements
 
 Use this Url to review the API documentation : [Local API Documentation - Swagger](http://localhost:8080/swagger-ui.html)
 
+![img.png](img.png)
