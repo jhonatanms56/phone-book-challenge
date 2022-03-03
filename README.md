@@ -6,8 +6,9 @@ Contacts manager project.
 - Springboot
 - Spring Data with JPA  
 - AWS (Amazon Web Service) Cloud hosting for the Data Base
-- Postgresql
+- Mysql
 - Thymeleaf (Front HTML5 JVM web development) https://www.thymeleaf.org/
+- Swagger API Documentation
 
 Requirements
 ====
@@ -17,6 +18,11 @@ Requirements
 - Checkout and run: mvn spring-boot:run
 - Once running go to http://localhost:8080/
 
-Use this Url to review the API documentation : [Local API Documentation - Swagger](http://localhost:8080/swagger-ui.html)
+# Mysql Database Connection Info
+- Server Host: phonebook.cdgpan8yrysq.us-east-1.rds.amazonaws.com
+- Database: phonebook
+- Username: admin
+- Password: Desarrollo1
 
+#Appication
 ![img.png](img.png)

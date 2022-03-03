@@ -10,10 +10,9 @@ spring:
           lob:
             non_contextual_creation: true
   datasource:
-    url: jdbc:postgresql://localhost:5432/postgres
-    driverClassName: org.postgresql.Driver
-    username: postgres
-    password: postgres
+    url: jdbc:mysql://phonebook.cdgpan8yrysq.us-east-1.rds.amazonaws.com:3306/phonebook
+    username: admin
+    password: Desarrollo1
   mvc:
     pathmatch:
       matching-strategy: ant-path-matcher
