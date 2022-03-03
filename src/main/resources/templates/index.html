@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="ISO-8859-1">
+    <title>Contact Manager</title>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div align="center">
+
+    <h1>PhoneBook code Challenge</h1>
+    <img th:src="@{img/phonebook.png}" alt="">
+    <br/><br/>
+            <h2><i class="fa fa-users"></i> Contacts</h2>
+            <form th:action="@{/}" class="pure-form">
+                <table style="width:40%">
+                    <tr>
+                        <td>
+                            <input type="text" name="keyword" id="keyword" size="50" th:value="${keyword}" required/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="submit" value="Search" class="pure-button"/>
+                            <input type="button" value="Clear" class="pure-button" id="btnClear"
+                                   onclick="clearSearch()"/>
+                            <a href="new" class="pure-button pure-button-primary">Create New Contact</a>
+                        </td>
+                    </tr>
+                </table>
+                </br>
+                <fieldset class="pure-group">
+                <table style="width:40%" class="pure-table" border="1" cellpadding="10">
+                    <thead>
+                    <tr>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Phone</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr th:each="contact : ${listContacts}" >
+                        <td th:text="${contact.firstName}">First Name</td>
+                        <td th:text="${contact.lastName}">Last Name</td>
+                        <td th:text="${contact.phone}">Phone</td>
+                    </tr>
+                    </tbody>
+                </table>
+                </fieldset>
+            </form>
+</div>
+<script type="text/javascript">
+	function clearSearch() {
+		window.location = "[[@{/}]]";
+	}
+
+
+
+</script>
+</body>
+</html>

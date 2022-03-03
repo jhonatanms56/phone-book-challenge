@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Create New Contact</title>
+	<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+</head>
+<body>
+
+		<h1>Create New Contact</h1>
+		<br/>
+		<form class="pure-form pure-form-aligned" action="#" th:action="@{/save}" th:object="${contact}" method="post">
+			<fieldset>
+				<div class="pure-control-group">
+					<label for="aligned-name">First Name</label>
+					<input type="text" id="aligned-name" placeholder="First Name" th:field="*{firstName}"
+						   required="required" />
+				</div>
+				<div class="pure-control-group">
+					<label for="aligned-last">Last Name</label>
+					<input type="text" id="aligned-last" placeholder="Last Name" th:field="*{lastName}"
+						   required="required"/>
+				</div>
+				<div class="pure-control-group">
+					<label for="aligned-phone">Phone</label>
+					<input type="tel" id="aligned-phone" placeholder="Phone" th:field="*{phone}"
+						   pattern="[0-9]+"
+						   required="required" />
+				</div>
+				<div class="pure-controls">
+					<button type="submit" class="pure-button pure-button-primary">Save</button>
+				</div>
+			</fieldset>
+		</form>
+
+</body>
+</html>
