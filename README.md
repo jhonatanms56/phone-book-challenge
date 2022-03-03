@@ -2,7 +2,7 @@
 Springboot phonebook Challenge.
 Contacts manager project.
 
-#Technologies
+# Technologies
 - Springboot
 - Spring Data with JPA  
 - AWS (Amazon Web Service) Cloud hosting for the Data Base
@@ -24,5 +24,5 @@ Requirements
 - Username: admin
 - Password: Desarrollo1
 
-#Appication
+# Appication
 ![img.png](img.png)
